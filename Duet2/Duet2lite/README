@@ -1,0 +1,4 @@
+Duet 2 Lite board
+
+Forked from Duet2Wifi by removing output (drivers and power) components so that external modules (stepper drivers, solid state relays...) can be attached and used instead of on-board components like on Duet2Wifi board.
+
