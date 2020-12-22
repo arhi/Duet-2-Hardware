@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "Duet Wifi"
+Title "Duet 2 Lite"
 Date "2018-04-24"
-Rev "1.04"
-Comp "Think3DPrint3D, Escher 3D"
+Rev "0"
+Comp ""
 Comment1 "CERN OSH License 1.2"
 Comment2 "http://www.ohwr.org/attachments/2388/cern_ohl_v_1_2.txt"
 Comment3 ""
@@ -40,8 +40,8 @@ L DuetWifi:GND #PWR023
 U 1 1 53B03BFF
 P 7650 5550
 AR Path="/53B03BFF" Ref="#PWR023"  Part="1" 
-AR Path="/50522538/53B03BFF" Ref="#PWR49"  Part="1" 
-F 0 "#PWR49" H 7650 5550 30  0001 C CNN
+AR Path="/50522538/53B03BFF" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 7650 5550 30  0001 C CNN
 F 1 "GND" H 7650 5480 30  0001 C CNN
 F 2 "" H 7650 5550 60  0001 C CNN
 F 3 "" H 7650 5550 60  0001 C CNN
@@ -73,9 +73,11 @@ $EndComp
 Text Notes 10500 1800 0    60   ~ 0
 1A
 $Comp
-L DuetWifi:DIODESCH D14
+L Duet2Lite:BAT54C D14
 U 1 1 5220D356
 P 10300 1750
+AR Path="/5220D356" Ref="D14"  Part="1" 
+AR Path="/50522538/5220D356" Ref="D14"  Part="1" 
 F 0 "D14" H 10300 1850 40  0000 C CNN
 F 1 "SS14M" H 10300 1650 40  0000 C CNN
 F 2 "complib:uSMA" H 10300 1750 60  0001 C CNN
@@ -103,8 +105,8 @@ L DuetWifi:GND #PWR024
 U 1 1 5220BA8F
 P 6350 5500
 AR Path="/5220BA8F" Ref="#PWR024"  Part="1" 
-AR Path="/50522538/5220BA8F" Ref="#PWR48"  Part="1" 
-F 0 "#PWR48" H 6350 5500 30  0001 C CNN
+AR Path="/50522538/5220BA8F" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 6350 5500 30  0001 C CNN
 F 1 "GND" H 6350 5430 30  0001 C CNN
 F 2 "" H 6350 5500 60  0001 C CNN
 F 3 "" H 6350 5500 60  0001 C CNN
@@ -136,10 +138,8 @@ Text Notes 9800 2650 0    60   ~ 0
 ATX Spec advises
 Text GLabel 10300 2200 3    60   Input ~ 0
 5V_IN
-Text Notes 8650 2750 0    60   ~ 0
-by the USB specification
-Text Notes 8650 2650 0    60   ~ 0
-VBUS limited to 500mA 
+Text Notes 8650 3200 0    60   ~ 0
+VBUS limited to 500mA by the USB spec
 $Comp
 L DuetWifi:JUMPER JP9
 U 1 1 52209EAB
@@ -163,9 +163,11 @@ F 3 "" H 2050 1100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DuetWifi:DIODESCH D13
+L Duet2Lite:BAT54C D13
 U 1 1 50F99BAC
 P 9050 1800
+AR Path="/50F99BAC" Ref="D13"  Part="1" 
+AR Path="/50522538/50F99BAC" Ref="D13"  Part="1" 
 F 0 "D13" H 9050 1900 40  0000 C CNN
 F 1 "SS14M" H 9050 1700 40  0000 C CNN
 F 2 "complib:uSMA" H 9050 1800 60  0001 C CNN
@@ -173,7 +175,7 @@ F 3 "" H 9050 1800 60  0001 C CNN
 	1    9050 1800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9050 2250 3    60   Input ~ 0
+Text GLabel 9050 2800 3    60   Input ~ 0
 VBUS
 Text Notes 1250 3850 0    60   ~ 0
 5V Input, 3.3V 500mA Output\nLow Drop-Out Linear Regulator
@@ -192,8 +194,8 @@ L DuetWifi:GND #PWR025
 U 1 1 50522574
 P 1750 5550
 AR Path="/50522574" Ref="#PWR025"  Part="1" 
-AR Path="/50522538/50522574" Ref="#PWR46"  Part="1" 
-F 0 "#PWR46" H 1750 5550 30  0001 C CNN
+AR Path="/50522538/50522574" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 1750 5550 30  0001 C CNN
 F 1 "GND" H 1750 5480 30  0001 C CNN
 F 2 "" H 1750 5550 60  0001 C CNN
 F 3 "" H 1750 5550 60  0001 C CNN
@@ -205,8 +207,8 @@ L DuetWifi:GND #PWR026
 U 1 1 50522566
 P 1900 3250
 AR Path="/50522566" Ref="#PWR026"  Part="1" 
-AR Path="/50522538/50522566" Ref="#PWR47"  Part="1" 
-F 0 "#PWR47" H 1900 3250 30  0001 C CNN
+AR Path="/50522538/50522566" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 1900 3250 30  0001 C CNN
 F 1 "GND" H 1900 3180 30  0001 C CNN
 F 2 "" H 1900 3250 60  0001 C CNN
 F 3 "" H 1900 3250 60  0001 C CNN
@@ -505,8 +507,6 @@ Wire Wire Line
 	1550 4250 2100 4250
 Wire Notes Line
 	4600 5800 1100 5800
-Wire Wire Line
-	9050 2250 9050 2000
 Wire Wire Line
 	10300 2200 10300 1950
 Wire Wire Line
@@ -1064,4 +1064,21 @@ Wire Wire Line
 	4950 2850 5250 2850
 Wire Wire Line
 	5250 2850 5450 2850
+$Comp
+L Duet2Lite:Jumper_NC_Small JP2
+U 1 1 5FE2AB7B
+P 9050 2400
+F 0 "JP2" V 9004 2475 50  0000 L CNN
+F 1 "VUSB 5V EN" V 9095 2475 50  0000 L CNN
+F 2 "complib:JUMPER" H 9050 2400 50  0001 C CNN
+F 3 "~" H 9050 2400 50  0001 C CNN
+	1    9050 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 2000 9050 2300
+Wire Wire Line
+	9050 2500 9050 2800
+Text Notes 8650 3500 0    60   ~ 0
+(added jumper to force disable power\nfrom USB in case that you do not want\ne.g. octoprint powering your board)
 $EndSCHEMATC

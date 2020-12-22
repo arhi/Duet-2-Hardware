@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name DuetWifi)(type Legacy)(uri D:/dev/duet-hardware-arhi/Duet2/Duet2v1.04/DuetWifi.lib)(options "")(descr ""))
+  (lib (name Duet2Lite)(type Legacy)(uri ${KIPRJMOD}/Duet2Lite.lib)(options "")(descr ""))
+  (lib (name Duet2Lite-rescue)(type Legacy)(uri ${KIPRJMOD}/Duet2Lite-rescue.lib)(options "")(descr ""))
 )
